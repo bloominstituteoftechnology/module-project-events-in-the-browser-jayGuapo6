@@ -37,6 +37,10 @@ function moduleProject2() {
       row.appendChild(square)
       square.addEventListener('click', () => {
         // 👉 TASK 2 - Use a click handler to target a square 👈
+
+        if (!square.classList.contains('targeted'))
+        document.querySelector('.targeted').classList.remove('targeted')
+        square.classList.add('targeted')
       })
     }
   }
@@ -65,7 +69,18 @@ function moduleProject2() {
 
   document.addEventListener('keydown', evt => {
     // 👉 TASK 3 - Use the arrow keys to highlight a new square 👈
+    console.log(evt.key)
+   let if isUp === keys.up
+   let if isDown === keys.down
+   let if isLeft === keys.left
+   let  if isRight === keys.right
 
+    if (isUp) {
+      console.log('You clicked isiUp'
+    }  
+    if (isUp) {
+      console.log('You clicked isiUp')
+    }
     // 👉 TASK 4 - Use the space bar to exterminate a mosquito 👈
 
     // 👉 TASK 5 - End the game 👈
